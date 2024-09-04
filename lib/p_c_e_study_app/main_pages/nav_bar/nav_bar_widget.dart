@@ -133,7 +133,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                     size: 40.0,
                   ),
                   onPressed: () async {
-                    context.pushNamed('QuizSet');
+                    context.pushNamed('Uploading_data');
                   },
                 ),
               ),
