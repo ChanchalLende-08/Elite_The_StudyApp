@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153993816171",
+    "project_id": "p-c-e-study-app-ocfg7z",
+    "storage_bucket": "p-c-e-study-app-ocfg7z.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153993816171:android:216b6299436e64511e692e",
+        "android_client_info": {
+          "package_name": "com.mycompany.pcestudyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHPVPv_rOKDDceq6pYBLyndo5TlRnUCuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
