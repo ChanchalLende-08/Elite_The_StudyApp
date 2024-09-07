@@ -22,7 +22,7 @@ class _DSPDNotesWidgetState extends State<DSPDNotesWidget> {
     super.initState();
     _model = createModel(context, () => DSPDNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

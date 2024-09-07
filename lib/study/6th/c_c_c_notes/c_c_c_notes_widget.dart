@@ -22,7 +22,7 @@ class _CCCNotesWidgetState extends State<CCCNotesWidget> {
     super.initState();
     _model = createModel(context, () => CCCNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

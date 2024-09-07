@@ -22,7 +22,7 @@ class _MLNotesWidgetState extends State<MLNotesWidget> {
     super.initState();
     _model = createModel(context, () => MLNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

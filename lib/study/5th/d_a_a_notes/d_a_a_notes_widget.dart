@@ -22,7 +22,7 @@ class _DAANotesWidgetState extends State<DAANotesWidget> {
     super.initState();
     _model = createModel(context, () => DAANotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -21,7 +21,7 @@ class _DepartmentPracWidgetState extends State<DepartmentPracWidget> {
     super.initState();
     _model = createModel(context, () => DepartmentPracModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

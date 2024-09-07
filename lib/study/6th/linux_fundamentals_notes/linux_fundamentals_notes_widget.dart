@@ -24,7 +24,7 @@ class _LinuxFundamentalsNotesWidgetState
     super.initState();
     _model = createModel(context, () => LinuxFundamentalsNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

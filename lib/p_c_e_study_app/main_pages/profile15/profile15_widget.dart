@@ -23,7 +23,7 @@ class _Profile15WidgetState extends State<Profile15Widget> {
     super.initState();
     _model = createModel(context, () => Profile15Model());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

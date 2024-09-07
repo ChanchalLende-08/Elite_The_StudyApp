@@ -22,7 +22,7 @@ class _NLPNotesWidgetState extends State<NLPNotesWidget> {
     super.initState();
     _model = createModel(context, () => NLPNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

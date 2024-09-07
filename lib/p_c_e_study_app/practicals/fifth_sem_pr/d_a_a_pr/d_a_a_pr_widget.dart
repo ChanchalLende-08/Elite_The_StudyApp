@@ -23,7 +23,7 @@ class _DAAPrWidgetState extends State<DAAPrWidget> {
     super.initState();
     _model = createModel(context, () => DAAPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

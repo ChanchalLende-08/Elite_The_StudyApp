@@ -22,7 +22,7 @@ class _DWMNotesWidgetState extends State<DWMNotesWidget> {
     super.initState();
     _model = createModel(context, () => DWMNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -23,7 +23,7 @@ class _FifthSemSubjectWidgetState extends State<FifthSemSubjectWidget> {
     super.initState();
     _model = createModel(context, () => FifthSemSubjectModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

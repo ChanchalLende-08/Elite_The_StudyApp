@@ -22,7 +22,7 @@ class _CNNotesWidgetState extends State<CNNotesWidget> {
     super.initState();
     _model = createModel(context, () => CNNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

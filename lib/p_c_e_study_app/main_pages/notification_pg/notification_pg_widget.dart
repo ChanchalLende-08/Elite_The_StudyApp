@@ -22,7 +22,7 @@ class _NotificationPgWidgetState extends State<NotificationPgWidget> {
     super.initState();
     _model = createModel(context, () => NotificationPgModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

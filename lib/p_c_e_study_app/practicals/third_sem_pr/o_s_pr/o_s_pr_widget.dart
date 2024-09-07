@@ -23,7 +23,7 @@ class _OSPrWidgetState extends State<OSPrWidget> {
     super.initState();
     _model = createModel(context, () => OSPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

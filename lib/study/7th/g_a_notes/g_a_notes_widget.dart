@@ -22,7 +22,7 @@ class _GANotesWidgetState extends State<GANotesWidget> {
     super.initState();
     _model = createModel(context, () => GANotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

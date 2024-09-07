@@ -29,7 +29,7 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
 
     _model.textController2 ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
-    _model.textFieldFocusNode2!.addListener(() => setState(() {}));
+    _model.textFieldFocusNode2!.addListener(() => safeSetState(() {}));
     _model.emailTextController ??= TextEditingController();
     _model.textFieldFocusNode3 ??= FocusNode();
 
@@ -39,7 +39,7 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
     _model.confirmPasswordTextController ??= TextEditingController();
     _model.textFieldFocusNode5 ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -357,7 +357,7 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     suffixIcon: InkWell(
-                      onTap: () => setState(
+                      onTap: () => safeSetState(
                         () => _model.passwordVisibility1 =
                             !_model.passwordVisibility1,
                       ),
@@ -428,7 +428,7 @@ class _RegistrationPageWidgetState extends State<RegistrationPageWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     suffixIcon: InkWell(
-                      onTap: () => setState(
+                      onTap: () => safeSetState(
                         () => _model.passwordVisibility2 =
                             !_model.passwordVisibility2,
                       ),

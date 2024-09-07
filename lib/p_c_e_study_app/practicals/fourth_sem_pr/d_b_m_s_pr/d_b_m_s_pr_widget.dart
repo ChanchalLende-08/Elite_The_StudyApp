@@ -23,7 +23,7 @@ class _DBMSPrWidgetState extends State<DBMSPrWidget> {
     super.initState();
     _model = createModel(context, () => DBMSPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

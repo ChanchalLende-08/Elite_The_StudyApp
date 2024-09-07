@@ -23,7 +23,7 @@ class _EighthSemSubjectWidgetState extends State<EighthSemSubjectWidget> {
     super.initState();
     _model = createModel(context, () => EighthSemSubjectModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

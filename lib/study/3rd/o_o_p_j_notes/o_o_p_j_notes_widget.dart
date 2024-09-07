@@ -22,7 +22,7 @@ class _OOPJNotesWidgetState extends State<OOPJNotesWidget> {
     super.initState();
     _model = createModel(context, () => OOPJNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

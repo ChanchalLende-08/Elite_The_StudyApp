@@ -23,7 +23,7 @@ class _FourthSemSubjectWidgetState extends State<FourthSemSubjectWidget> {
     super.initState();
     _model = createModel(context, () => FourthSemSubjectModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

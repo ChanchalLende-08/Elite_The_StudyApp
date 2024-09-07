@@ -22,7 +22,7 @@ class _TOCNotesWidgetState extends State<TOCNotesWidget> {
     super.initState();
     _model = createModel(context, () => TOCNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

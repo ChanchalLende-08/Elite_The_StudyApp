@@ -22,7 +22,7 @@ class _MCNotesWidgetState extends State<MCNotesWidget> {
     super.initState();
     _model = createModel(context, () => MCNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

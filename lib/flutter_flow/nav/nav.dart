@@ -8,7 +8,6 @@ import '/backend/schema/structs/index.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -75,13 +74,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
+          appStateNotifier.loggedIn ? const HomePageWidget() : const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
+              appStateNotifier.loggedIn ? const HomePageWidget() : const LoginPageWidget(),
         ),
         FFRoute(
           name: 'Login_Page',
@@ -296,9 +295,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Coding_Aptitude',
           path: '/codingAptitude',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Coding_Aptitude')
-              : const CodingAptitudeWidget(),
+          builder: (context, params) => const CodingAptitudeWidget(),
         ),
         FFRoute(
           name: 'Coding_Questions',
@@ -688,9 +685,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Coding_notes',
           path: '/codingnotes',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Coding_notes')
-              : const CodingNotesWidget(),
+          builder: (context, params) => const CodingNotesWidget(),
         ),
         FFRoute(
           name: 'Quiz5',

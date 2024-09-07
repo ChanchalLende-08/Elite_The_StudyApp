@@ -23,7 +23,7 @@ class _DSPDPrWidgetState extends State<DSPDPrWidget> {
     super.initState();
     _model = createModel(context, () => DSPDPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

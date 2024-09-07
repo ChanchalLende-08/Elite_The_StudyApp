@@ -30,7 +30,7 @@ class _CodingQuestionsWidgetState extends State<CodingQuestionsWidget> {
       context.pushNamed('Coding_Questions');
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -15,7 +15,6 @@ class Quiz3Model extends FlutterFlowModel<Quiz3Widget> {
 
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for PageView widget.
   PageController? pageViewController;
 

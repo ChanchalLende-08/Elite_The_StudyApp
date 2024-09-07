@@ -22,7 +22,7 @@ class _SixthPyqWidgetState extends State<SixthPyqWidget> {
     super.initState();
     _model = createModel(context, () => SixthPyqModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

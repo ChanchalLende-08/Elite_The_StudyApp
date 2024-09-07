@@ -24,7 +24,7 @@ class _POsWidgetState extends State<POsWidget> {
     super.initState();
     _model = createModel(context, () => POsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -1100,7 +1100,7 @@ class _POsWidgetState extends State<POsWidget> {
                                     duration: const Duration(milliseconds: 500),
                                     curve: Curves.ease,
                                   );
-                                  setState(() {});
+                                  safeSetState(() {});
                                 },
                                 effect:
                                     smooth_page_indicator.ExpandingDotsEffect(

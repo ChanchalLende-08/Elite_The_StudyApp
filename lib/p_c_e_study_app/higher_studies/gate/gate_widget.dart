@@ -25,7 +25,7 @@ class _GateWidgetState extends State<GateWidget> {
     super.initState();
     _model = createModel(context, () => GateModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

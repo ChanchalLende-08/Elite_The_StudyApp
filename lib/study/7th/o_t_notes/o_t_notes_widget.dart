@@ -22,7 +22,7 @@ class _OTNotesWidgetState extends State<OTNotesWidget> {
     super.initState();
     _model = createModel(context, () => OTNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

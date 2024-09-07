@@ -31,7 +31,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
     _model.passwordTextController ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -131,7 +131,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               onChanged: (_) => EasyDebounce.debounce(
                                 '_model.emailTextController',
                                 const Duration(milliseconds: 2000),
-                                () => setState(() {}),
+                                () => safeSetState(() {}),
                               ),
                               autofocus: true,
                               textInputAction: TextInputAction.next,
@@ -187,7 +187,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                     ? InkWell(
                                         onTap: () async {
                                           _model.emailTextController?.clear();
-                                          setState(() {});
+                                          safeSetState(() {});
                                         },
                                         child: const Icon(
                                           Icons.clear,
@@ -283,7 +283,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       const EdgeInsetsDirectional.fromSTEB(
                                           15.0, 7.0, 35.0, 0.0),
                                   suffixIcon: InkWell(
-                                    onTap: () => setState(
+                                    onTap: () => safeSetState(
                                       () => _model.passwordVisibility =
                                           !_model.passwordVisibility,
                                     ),

@@ -22,7 +22,7 @@ class _EighthSyllabusWidgetState extends State<EighthSyllabusWidget> {
     super.initState();
     _model = createModel(context, () => EighthSyllabusModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

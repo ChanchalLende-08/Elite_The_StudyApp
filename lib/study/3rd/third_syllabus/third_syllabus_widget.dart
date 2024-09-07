@@ -22,7 +22,7 @@ class _ThirdSyllabusWidgetState extends State<ThirdSyllabusWidget> {
     super.initState();
     _model = createModel(context, () => ThirdSyllabusModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -30,7 +30,7 @@ class _CodingNotesWidgetState extends State<CodingNotesWidget> {
       context.pushNamed('Coding_notes');
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

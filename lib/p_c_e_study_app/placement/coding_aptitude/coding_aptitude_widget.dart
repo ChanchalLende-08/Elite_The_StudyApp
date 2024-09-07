@@ -30,7 +30,7 @@ class _CodingAptitudeWidgetState extends State<CodingAptitudeWidget> {
       context.pushNamed('Coding_Aptitude');
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

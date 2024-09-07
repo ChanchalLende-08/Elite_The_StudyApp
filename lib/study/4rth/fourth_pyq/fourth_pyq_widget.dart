@@ -22,7 +22,7 @@ class _FourthPyqWidgetState extends State<FourthPyqWidget> {
     super.initState();
     _model = createModel(context, () => FourthPyqModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

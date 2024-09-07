@@ -22,7 +22,7 @@ class _SEPMNotesWidgetState extends State<SEPMNotesWidget> {
     super.initState();
     _model = createModel(context, () => SEPMNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

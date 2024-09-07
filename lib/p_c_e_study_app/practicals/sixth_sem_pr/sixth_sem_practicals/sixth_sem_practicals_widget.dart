@@ -22,7 +22,7 @@ class _SixthSemPracticalsWidgetState extends State<SixthSemPracticalsWidget> {
     super.initState();
     _model = createModel(context, () => SixthSemPracticalsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

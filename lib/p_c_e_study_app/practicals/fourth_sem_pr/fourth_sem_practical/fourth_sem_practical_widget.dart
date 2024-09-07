@@ -22,7 +22,7 @@ class _FourthSemPracticalWidgetState extends State<FourthSemPracticalWidget> {
     super.initState();
     _model = createModel(context, () => FourthSemPracticalModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

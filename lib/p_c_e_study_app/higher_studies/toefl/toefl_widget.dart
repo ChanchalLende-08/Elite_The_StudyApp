@@ -24,7 +24,7 @@ class _ToeflWidgetState extends State<ToeflWidget> {
     super.initState();
     _model = createModel(context, () => ToeflModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

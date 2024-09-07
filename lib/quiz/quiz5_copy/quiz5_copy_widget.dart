@@ -65,7 +65,7 @@ class _Quiz5CopyWidgetState extends State<Quiz5CopyWidget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _IPRNotesWidgetState extends State<IPRNotesWidget> {
     super.initState();
     _model = createModel(context, () => IPRNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

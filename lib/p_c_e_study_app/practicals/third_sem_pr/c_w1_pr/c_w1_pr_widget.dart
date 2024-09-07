@@ -23,7 +23,7 @@ class _CW1PrWidgetState extends State<CW1PrWidget> {
     super.initState();
     _model = createModel(context, () => CW1PrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _PythonNotesWidgetState extends State<PythonNotesWidget> {
     super.initState();
     _model = createModel(context, () => PythonNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

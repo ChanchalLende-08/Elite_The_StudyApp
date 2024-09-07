@@ -22,7 +22,7 @@ class _BlockchainNoteWidgetState extends State<BlockchainNoteWidget> {
     super.initState();
     _model = createModel(context, () => BlockchainNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

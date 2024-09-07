@@ -22,7 +22,7 @@ class _BTNotesWidgetState extends State<BTNotesWidget> {
     super.initState();
     _model = createModel(context, () => BTNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

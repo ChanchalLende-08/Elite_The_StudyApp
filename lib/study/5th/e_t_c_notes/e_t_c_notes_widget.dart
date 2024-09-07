@@ -22,7 +22,7 @@ class _ETCNotesWidgetState extends State<ETCNotesWidget> {
     super.initState();
     _model = createModel(context, () => ETCNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

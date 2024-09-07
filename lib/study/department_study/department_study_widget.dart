@@ -21,7 +21,7 @@ class _DepartmentStudyWidgetState extends State<DepartmentStudyWidget> {
     super.initState();
     _model = createModel(context, () => DepartmentStudyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

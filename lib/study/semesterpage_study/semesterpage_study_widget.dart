@@ -22,7 +22,7 @@ class _SemesterpageStudyWidgetState extends State<SemesterpageStudyWidget> {
     super.initState();
     _model = createModel(context, () => SemesterpageStudyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

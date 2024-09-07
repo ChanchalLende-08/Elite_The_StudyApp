@@ -22,7 +22,7 @@ class _CVNotesWidgetState extends State<CVNotesWidget> {
     super.initState();
     _model = createModel(context, () => CVNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

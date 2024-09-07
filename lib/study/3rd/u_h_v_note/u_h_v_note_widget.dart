@@ -22,7 +22,7 @@ class _UHVNoteWidgetState extends State<UHVNoteWidget> {
     super.initState();
     _model = createModel(context, () => UHVNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _M3NotesWidgetState extends State<M3NotesWidget> {
     super.initState();
     _model = createModel(context, () => M3NotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

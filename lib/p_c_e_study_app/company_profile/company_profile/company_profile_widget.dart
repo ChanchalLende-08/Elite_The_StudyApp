@@ -27,7 +27,7 @@ class _CompanyProfileWidgetState extends State<CompanyProfileWidget> {
     super.initState();
     _model = createModel(context, () => CompanyProfileModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

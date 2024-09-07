@@ -23,7 +23,7 @@ class _AIPrWidgetState extends State<AIPrWidget> {
     super.initState();
     _model = createModel(context, () => AIPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

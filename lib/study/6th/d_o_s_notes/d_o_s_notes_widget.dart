@@ -22,7 +22,7 @@ class _DOSNotesWidgetState extends State<DOSNotesWidget> {
     super.initState();
     _model = createModel(context, () => DOSNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

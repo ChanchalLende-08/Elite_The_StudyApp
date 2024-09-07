@@ -22,7 +22,7 @@ class _ThirdSemPracticalsWidgetState extends State<ThirdSemPracticalsWidget> {
     super.initState();
     _model = createModel(context, () => ThirdSemPracticalsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

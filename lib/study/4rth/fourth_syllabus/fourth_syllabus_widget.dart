@@ -22,7 +22,7 @@ class _FourthSyllabusWidgetState extends State<FourthSyllabusWidget> {
     super.initState();
     _model = createModel(context, () => FourthSyllabusModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _FourthStudymaterialWidgetState extends State<FourthStudymaterialWidget> {
     super.initState();
     _model = createModel(context, () => FourthStudymaterialModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -23,7 +23,7 @@ class _CDPrWidgetState extends State<CDPrWidget> {
     super.initState();
     _model = createModel(context, () => CDPrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

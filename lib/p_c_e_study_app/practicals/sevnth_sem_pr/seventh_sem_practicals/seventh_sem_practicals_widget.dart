@@ -25,7 +25,7 @@ class _SeventhSemPracticalsWidgetState
     super.initState();
     _model = createModel(context, () => SeventhSemPracticalsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _CADSNotesWidgetState extends State<CADSNotesWidget> {
     super.initState();
     _model = createModel(context, () => CADSNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

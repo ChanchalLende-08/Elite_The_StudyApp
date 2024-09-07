@@ -22,7 +22,7 @@ class _SignoutWidgetState extends State<SignoutWidget> {
     super.initState();
     _model = createModel(context, () => SignoutModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

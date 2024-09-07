@@ -22,7 +22,7 @@ class _HigherStudiesWidgetState extends State<HigherStudiesWidget> {
     super.initState();
     _model = createModel(context, () => HigherStudiesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -66,7 +66,7 @@ class _Quiz1WidgetState extends State<Quiz1Widget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -372,7 +372,7 @@ class _Quiz1WidgetState extends State<Quiz1Widget>
                                                                             () async {
                                                                           _model.selectedoption =
                                                                               ansoptionItem;
-                                                                          setState(
+                                                                          safeSetState(
                                                                               () {});
                                                                         },
                                                                         text:
@@ -442,14 +442,14 @@ class _Quiz1WidgetState extends State<Quiz1Widget>
                                                                           .selectedoption ==
                                                                       quiz1DocsItem
                                                                           .correctans;
-                                                                  setState(
+                                                                  safeSetState(
                                                                       () {});
                                                                   if (_model
                                                                       .iscorrect!) {
                                                                     _model.quizescore =
                                                                         _model.quizescore! +
                                                                             1;
-                                                                    setState(
+                                                                    safeSetState(
                                                                         () {});
                                                                   }
                                                                   await Future.delayed(
@@ -458,7 +458,7 @@ class _Quiz1WidgetState extends State<Quiz1Widget>
                                                                               2000));
                                                                   _model.selectedoption =
                                                                       '';
-                                                                  setState(
+                                                                  safeSetState(
                                                                       () {});
                                                                   if (quiz1DocsItem
                                                                           .questionno ==

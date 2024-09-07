@@ -22,7 +22,7 @@ class _RLNoteWidgetState extends State<RLNoteWidget> {
     super.initState();
     _model = createModel(context, () => RLNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

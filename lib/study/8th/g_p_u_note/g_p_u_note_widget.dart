@@ -22,7 +22,7 @@ class _GPUNoteWidgetState extends State<GPUNoteWidget> {
     super.initState();
     _model = createModel(context, () => GPUNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _OSPyqCopyWidgetState extends State<OSPyqCopyWidget> {
     super.initState();
     _model = createModel(context, () => OSPyqCopyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

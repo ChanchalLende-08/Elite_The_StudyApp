@@ -22,7 +22,7 @@ class _FifthSemPracticalsWidgetState extends State<FifthSemPracticalsWidget> {
     super.initState();
     _model = createModel(context, () => FifthSemPracticalsModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

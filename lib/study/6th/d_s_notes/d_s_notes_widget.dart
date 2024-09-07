@@ -22,7 +22,7 @@ class _DSNotesWidgetState extends State<DSNotesWidget> {
     super.initState();
     _model = createModel(context, () => DSNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

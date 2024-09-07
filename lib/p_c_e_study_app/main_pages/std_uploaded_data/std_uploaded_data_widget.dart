@@ -64,7 +64,7 @@ class _StdUploadedDataWidgetState extends State<StdUploadedDataWidget>
       ),
     });
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

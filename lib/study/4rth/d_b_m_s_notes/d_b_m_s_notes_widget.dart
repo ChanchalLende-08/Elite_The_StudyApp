@@ -22,7 +22,7 @@ class _DBMSNotesWidgetState extends State<DBMSNotesWidget> {
     super.initState();
     _model = createModel(context, () => DBMSNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

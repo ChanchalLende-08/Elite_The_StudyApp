@@ -22,7 +22,7 @@ class _SNNoteWidgetState extends State<SNNoteWidget> {
     super.initState();
     _model = createModel(context, () => SNNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

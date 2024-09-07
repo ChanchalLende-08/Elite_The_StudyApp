@@ -23,7 +23,7 @@ class _PS2PrWidgetState extends State<PS2PrWidget> {
     super.initState();
     _model = createModel(context, () => PS2PrModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _EITNoteWidgetState extends State<EITNoteWidget> {
     super.initState();
     _model = createModel(context, () => EITNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -21,7 +21,7 @@ class _UploadingDataWidgetState extends State<UploadingDataWidget> {
     super.initState();
     _model = createModel(context, () => UploadingDataModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

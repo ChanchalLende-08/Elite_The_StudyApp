@@ -24,7 +24,7 @@ class _PredictiveAnalysisNoteWidgetState
     super.initState();
     _model = createModel(context, () => PredictiveAnalysisNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

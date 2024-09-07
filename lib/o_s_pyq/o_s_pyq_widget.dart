@@ -22,7 +22,7 @@ class _OSPyqWidgetState extends State<OSPyqWidget> {
     super.initState();
     _model = createModel(context, () => OSPyqModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _CDNotesWidgetState extends State<CDNotesWidget> {
     super.initState();
     _model = createModel(context, () => CDNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _EITINotesWidgetState extends State<EITINotesWidget> {
     super.initState();
     _model = createModel(context, () => EITINotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

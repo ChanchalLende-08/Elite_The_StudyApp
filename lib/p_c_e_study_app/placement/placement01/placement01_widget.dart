@@ -21,7 +21,7 @@ class _Placement01WidgetState extends State<Placement01Widget> {
     super.initState();
     _model = createModel(context, () => Placement01Model());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _OSNoteWidgetState extends State<OSNoteWidget> {
     super.initState();
     _model = createModel(context, () => OSNoteModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -22,7 +22,7 @@ class _AADNotesCopyWidgetState extends State<AADNotesCopyWidget> {
     super.initState();
     _model = createModel(context, () => AADNotesCopyModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

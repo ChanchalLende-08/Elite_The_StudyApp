@@ -23,7 +23,7 @@ class _ThirdSemSubjectWidgetState extends State<ThirdSemSubjectWidget> {
     super.initState();
     _model = createModel(context, () => ThirdSemSubjectModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

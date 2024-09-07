@@ -22,7 +22,7 @@ class _TCPIPNotesWidgetState extends State<TCPIPNotesWidget> {
     super.initState();
     _model = createModel(context, () => TCPIPNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

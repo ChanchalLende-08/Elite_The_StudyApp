@@ -22,7 +22,7 @@ class _ThirdPyqWidgetState extends State<ThirdPyqWidget> {
     super.initState();
     _model = createModel(context, () => ThirdPyqModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

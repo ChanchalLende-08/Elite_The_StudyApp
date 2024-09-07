@@ -22,7 +22,7 @@ class _SPNotesWidgetState extends State<SPNotesWidget> {
     super.initState();
     _model = createModel(context, () => SPNotesModel());
 
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
